@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Xtreme admin lite design, Xtreme admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Xtreme Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Turismo Comunitario Cotopaxi</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="images/icnturist.jpg" rel="icon">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header " data-logobg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div id="logo" class="pull-left">
+                        <h1> <a  style="font-size: x-large; font-weight: 900;" href="/logout">CotoTurist</a></h1>
+                       
+                        <!-- Uncomment below if you prefer to use a text logo -->
+                        <!--<h1><a href="#hero">Regna</a></h1>-->
+                      </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                       
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <div class="text-right upgrade-btn">
+                                <a href="/logout" class="btn btn-danger text-white" >Logout</a>
+                            </div>
+                            
+                            
+                           
+                              
+                                   
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <div class="user-profile d-flex no-block dropdown m-t-20">
+                                <div class="user-pic"><img src="../../assets/images/users/1.jpg" alt="users"
+                                        class="rounded-circle" width="40" /></div>
+                                <div class="user-content hide-menu m-l-10">
+                                    <a href="javascript:void(0)" class="" id="Userdd" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5 class="m-b-0 user-name font-medium"> <%=data.name_emprendedor%><i
+                                                class=""></i></h5>
+                                        <span class="op-5 user-email"><%=data.correo%></span>
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                            <!-- End User Profile-->
+                        </li>
+                       
+                        <!-- User Profile-->
+                  
+                      
+                        
+
+                          
+                           
+                           
+
+                            <li class="sidebar-item"> <a href="/Panel" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                ><i class="mdi mdi-calendar-text"></i><span
+                                    class="hide-menu">Notificaciones</span></a></li>
+                     
+                                    <li class="sidebar-item"> <a href="/profile" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                        ><i class="mdi mdi-calendar-text"></i><span
+                                            class="hide-menu">Perfil</span></a></li>
+
+                                   
+                                    <li class="sidebar-item"> <a href="/Panelreg" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                        ><i class="mdi mdi-account-plus"></i><span
+                                            class="hide-menu">Registro</span></a></li>
+ 
+
+                                     
+                
+                                            <li class="sidebar-item"> <a href="/PanelConsul" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                                ><i class="mdi mdi-account-card-details"></i><span
+                                                    class="hide-menu">Consultas</span></a></li>
+                                     
+                                                
+                                                    <li class="sidebar-item"> <a href="/PanelAnuncios" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                                        ><i class="mdi mdi-relative-scale"></i><span
+                                                            class="hide-menu">Anuncios/Ofertar</span></a></li>
+                                
+                       
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <h4 class="page-title">Perfil Page</h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- Row -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-4 col-xlg-3 col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <center class="m-t-30"> 
+                                    <h4 class="card-title m-t-10"><%=data.name_emprendedor%></h4>
+                                    <h6 class="card-subtitle"><%=data.correo%></h6>
+                                    <div class="row text-center justify-content-md-center">
+                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i
+                                                    class="icon-people"></i>
+                                              
+                                            </a></div>
+                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i
+                                                    class="icon-picture"></i>
+                                               
+                                            </a></div>
+                                    </div>
+                                </center>
+                            </div>
+                            <div>
+                                <hr>
+                            </div>
+                            <div class="card-body"> <small class="text-muted">Email address </small>
+                                <h6><%=data.correo%></h6> <small class="text-muted p-t-30 db">Phone</small>
+                                <h6><%=data.telf_emprendedor%></h6> <small class="text-muted p-t-30 db">Usuario</small>
+                                <h6>Usuario Registrado</h6>
+                                <div class="map-box">
+                                    
+                                </div> <small class="text-muted p-t-30 db">Social Profile</small>
+                                <br />
+                                <a class="btn btn-circle btn-secondary" href="http://facebook.com/RedProfesionalesCotopaxi" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-8 col-xlg-9 col-md-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <form method="POST" action="/updateprofile">
+                                    <div class="form-group">
+                                        <label class="col-md-12">Full Name</label>
+                                        <div class="col-md-12">
+                                            <input type="text" required value="<%=data.name_emprendedor%>"
+                                              name="name_emprendedor"  class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="example-email" class="col-md-12">Email</label>
+                                        <div class="col-md-12">
+                                            <input type="email" disabled value="<%=data.correo%>"
+                                                class="form-control form-control-line" name="example-email"
+                                                id="example-email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-12">Phone No</label>
+                                        <div class="col-md-12">
+                                            Incluya el prefijo de su pais (+593*********)
+                                            <input type="text" name="Contacto"  id="Contacto" required value="<%=data.telf_emprendedor%>"
+                                            onkeypress='return validaNumericos(event)' maxlength="13"
+                                                class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-success text-white" type="submit">Actualizar Perfil</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-md-12">
+                <button class="btn btn-success text-white"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Cambiar Contraseña</button>
+            </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Cambiar Contraseña</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+
+                          <form action="/updatepasswordprofile" method="POST">
+                            <input  type="hidden" name="correo"  value="<%=data.correo%>" required>
+                            <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Ingrese password">
+                                <input class="form-control" type="password" name="password1"  id="password1" placeholder="Password" required>
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Ingrese nuevamente password">
+                                <input class="form-control" type="password" name="password2" id="password2" placeholder="Ingrese nuevamente password" required>
+                                <span class="focus-input100"></span>
+                            </div>
+    
+                            <h5 id="mensaje_error" class="control-label col-md-12 text-success" style="display: block;"></h5>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button class="btn btn-success text-white" type="submit" id="butmis">
+
+							Restablecer Contraseña
+
+            </button>
+            <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>   
+            
+
+            <script>
+               
+        
+        var cambioDePass = function() {
+                var cont = $('#password1').val();
+            var cont2 = $('#password2').val();
+
+                if(cont=="" || cont2 ==" "){
+
+                    $('#mensaje_error').hide();
+                $('#mensaje_error').attr("class", "control-label col-md-12 text-success");
+                $('#mensaje_error').show();
+                $('#mensaje_error').html(" ");
+                document.getElementById('butmis').hidden=false;
+
+
+                }else
+
+            if (cont == cont2) {
+                $('#mensaje_error').hide();
+                $('#mensaje_error').attr("class", "control-label col-md-12 text-success");
+                $('#mensaje_error').show();
+                $('#mensaje_error').html("Las constraseñas si coinciden");
+                document.getElementById('butmis').hidden=false;
+            } else {
+                 $('#mensaje_error').html("Las constraseñas no coinciden");
+                $('#mensaje_error').show();
+                document.getElementById('butmis').hidden=true;
+            }
+        }
+        
+        $("#password1").on('keyup', cambioDePass);
+        $("#password2").on('keyup', cambioDePass);
+            </script>
+                          
+                        </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Column -->
+                </div>
+                
+                
+                                                    
+                <script>
+                   
+                
+                    
+                    function validaNumericos(event) {
+                    if(event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43){
+                      return true;
+                     }
+                     return false;        
+                }
+                
+                
+                  </script>
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by Xtreme Admin. Designed and Developed by <a
+                    href="https://www.wrappixel.com">WrapPixel</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.js"></script>
+</body>
+
+</html>

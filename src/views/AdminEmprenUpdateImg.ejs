@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Xtreme admin lite design, Xtreme admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Xtreme Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Xtreme Admin Lite Template by WrapPixel</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/xtreme-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://bootswatch.com/4/minty/bootstrap.min.css" rel="stylesheet">
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<!------ leaflet ---------->
+	
+	<script src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet-src.js'></script>
+    <script src="js/jquery-1.8.2.min.js"></script>
+
+	<link href='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css' rel='stylesheet' />
+
+    
+
+
+
+<link href="../AdminEmpre/style1.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header " data-logobg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div id="logo" class="pull-left">
+                        <h1> <a  style="font-size: x-large; font-weight: 900;" href="/logout">CotoTurist</a></h1>
+                       
+                        <!-- Uncomment below if you prefer to use a text logo -->
+                        <!--<h1><a href="#hero">Regna</a></h1>-->
+                      </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                       
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <div class="text-right upgrade-btn">
+                                <a href="/logout" class="btn btn-danger text-white" >Logout</a>
+                            </div>
+                            
+                            
+                           
+                              
+                                   
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <div class="user-profile d-flex no-block dropdown m-t-20">
+                                <div class="user-pic"><img src="../../assets/images/users/1.jpg" alt="users"
+                                        class="rounded-circle" width="40" /></div>
+                                <div class="user-content hide-menu m-l-10">
+                                    <a href="javascript:void(0)" class="" id="Userdd" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5 class="m-b-0 user-name font-medium"> <%=data.name_emprendedor%><i
+                                                class=""></i></h5>
+                                        <span class="op-5 user-email"><%=data.correo%></span>
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                            <!-- End User Profile-->
+                        </li>
+                       
+                        <!-- User Profile-->
+                      
+             
+
+                        <li class="sidebar-item"> <a href="/Panel" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                            ><i class="mdi mdi-calendar-text"></i><span
+                                class="hide-menu">Notificaciones</span></a></li>
+                 
+
+                                <li class="sidebar-item"> <a href="/profile" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                    ><i class="mdi mdi-calendar-text"></i><span
+                                        class="hide-menu">Perfil</span></a></li>
+                               
+                                <li class="sidebar-item"> <a href="/Panelreg" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                    ><i class="mdi mdi-account-plus"></i><span
+                                        class="hide-menu">Registro</span></a></li>
+
+
+                                 
+            
+                                        <li class="sidebar-item"> <a href="/PanelConsul" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                            ><i class="mdi mdi-account-card-details"></i><span
+                                                class="hide-menu">Consultas</span></a></li>
+                                 
+                                            
+                                                <li class="sidebar-item"> <a href="/PanelAnuncios" class="sidebar-link waves-effect waves-dark sidebar-link" 
+                                                    ><i class="mdi mdi-relative-scale"></i><span
+                                                        class="hide-menu">Anuncios/Ofertar</span></a></li>
+                                 
+                                          
+                           
+                            
+                   
+                </ul>
+
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        
+                        <h1 class="page-title">Actualización de Imágenes</h1>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Actualización</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-16">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Actualización</h4>
+                                        <h5 class="card-subtitle">Ingreso nuevas Imágenes</h5>
+                                    </div>
+                                 
+                                </div>
+                                <div class="row">
+                                    <!-- column -->
+                                    <div class="col-lg-12"></div>
+                                        <div class="card-body">
+
+
+
+                                            
+                                             
+                                                
+                                            <div class="m-b-40">
+                                            
+                                                
+                                     
+                
+             
+
+
+
+
+
+
+ 
+
+
+                                                <h5 style="color: crimson;"><%=menImg%></h5>
+
+                          <form class="validate-form"  action="/SubirImg" method="POST"  enctype="multipart/form-data">
+
+                          
+                                                <input type="hidden" name="id_emprendedor" value="<%=data.id_emprendedor%>">
+                                                <input type="hidden" name="id_emprendimiento" value="<%=emprenCon.id_emprendimiento%>">
+            
+                                                <div class="row">
+                                                    <div class="col s12 m6">
+                                                      <div class="card blue-grey darken-1">
+                                                        <div class="card-content white-text">
+                                                          <span class="card-title">Subir Imágenes</span>
+                                                          
+                                                <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20></div>
+                                                <div id="wrapper">
+                                                    <input id="fileUpload" name="imagen1" type="file"  accept="image/gif, image/jpeg, image/png" />
+                                                    <br />
+                                                    <div id="image-holder"></div>
+                                                </div>
+                                                        </div>
+                                                        <div class="card-action">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                          
+
+                                               
+                                              
+
+
+
+
+                                            </div>
+
+
+
+
+                                            
+
+                                                
+                                                <div class="container-login100-form-btn">
+                                                    <button class="login100-form-btn" type="submit">
+                                                        Subir nuevas Imagenes
+                                        </button>
+                                    </form>
+                                    
+                                    </div>
+                            
+                                    <div class="w-full text-center p-t-27 p-b-239">
+                            
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                     
+                        
+                                                        <div class="container p-4">
+                                                            <div class="row">
+                                                                <% for (var i = 0; i < ImagenesCon.length; i++){ %>
+                                                                    <div class="col-md-3">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body">
+                                                                                <img src="<%= ImagenesCon[i].path_img%>" width="200" height="200">
+                                                                                  
+                                                                                    
+                                                                                
+                                                                                <p class="m-2"></p>
+                                                                                <p class="text-muted">
+                                                                                    
+                                                                                </p>
+                                                                                <a href="/ver/<%=emprenCon.id_emprendimiento%>" target="_blank" ><%= emprenCon.name_emprendimiento%></a>
+                                                                                <form class="validate-form"  action="/deleteImg" method="POST"  >
+
+                                                                               <input type="hidden" name="id_emprendimiento" value="<%=ImagenesCon[i].registro_emprendimiento_Lturistico_id_emprendimiento1%>">
+                                                                               <input type="hidden" name="id_img" value="<%=ImagenesCon[i].id_img%>">
+                                                                               <input type="hidden" name="id_emprendedor" value="<%=data.id_emprendedor%>">
+                                                                                <button class="btn btn-danger" type="submit">
+                                                                                    Borrar Imagen
+                                                                                </button>
+                                                                                </form>
+                                                                            
+                                                                        </div>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                                <% } %>
+                        
+                        
+                                                                
+                                                                
+                                                                
+                                                            </div>
+                                                        </div>
+                            
+                                      
+                            
+                            
+                                        
+                            
+                                    </div>
+                            
+                                                
+                                            
+                                        </div>  
+                                    
+                                    <!-- column -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                   
+    
+    
+                   
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="js/main.js"></script>
+<!--=======leaflet=====================================================-->
+    <script src="js/map.js"></script>
+    <script src="js/mapa.js"></script>
+                                                 
+    <script>
+
+        $("#fileUpload").on('change', function () {
+        
+        //Get count of selected files
+        var countFiles = $(this)[0].files.length;
+        var imgPath = $(this)[0].value;
+        var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+        var image_holder = $("#image-holder");
+        image_holder.empty();
+        
+        if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof (FileReader) != "undefined") {
+        
+                if( $(this)[0].files.length<4){
+                //loop for each file selected for uploaded.
+                for (var i = 0; i < countFiles; i++) {
+        
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $("<img />", {
+                            "src": e.target.result,
+                                "class": "thumb-image"
+                        }).appendTo(image_holder);
+                    }
+        
+                    image_holder.show();
+                    reader.readAsDataURL($(this)[0].files[i]);
+                }
+        }else{
+            alert("Maximo 3 Images");
+            document.getElementById("fileUpload").value = ""; 
+        
+        }
+            } else {
+                alert("This browser does not support FileReader.");
+            }
+        } else {
+            
+            alert("Escoge solo imagenes");
+            document.getElementById("fileUpload").value = "";
+        }
+        
+        
+        
+        });
+                                                        
+                                                        </script>
+
+
+
+</body>
+
+</html>

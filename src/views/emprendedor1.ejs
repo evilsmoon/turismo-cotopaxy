@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Xtreme admin lite design, Xtreme admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Xtreme Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Adm_Cototurist_<%=data.name_administador%></title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/xtreme-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icnturist.jpg">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header " data-logobg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    
+                        <div class="col s12 m6">
+                        <h1> <a  style="font-size: x-large; font-weight: 900; color: #20c997; font-size: 32px;" href="/logoutAdministrador">CotoTurist</a></h1>
+                    </div>
+                        <!-- Uncomment below if you prefer to use a text logo -->
+                        <!--<h1><a href="#hero">Regna</a></h1>-->
+                      
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                       
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <div class="text-right upgrade-btn">
+                                <a href="/logoutAdministrador" class="btn btn-danger text-white" >Logout</a>
+                            </div>
+                            
+                            
+                           
+                              
+                                   
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <div class="user-profile d-flex no-block dropdown m-t-20">
+                                <div class="user-pic"><img src="images/adm.png" alt="users"
+                                        class="rounded-circle" width="40" /></div>
+                                <div class="user-content hide-menu m-l-10">
+                                    <a href="#" class="" id="Userdd" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5 class="m-b-0 user-name font-medium"> <%=data.name_administador%><i
+                                            class=""></i></h5>
+                                    <span class="op-5 user-email"><%=data.correo_administrador%></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="Userdd">
+                                        <a class="dropdown-item" href="javascript:void(0)"><i
+                                                class="ti-user m-r-5 m-l-5"></i> My Profile</a>
+                                        <a class="dropdown-item" href="javascript:void(0)"><i
+                                                class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
+                                        <a class="dropdown-item" href="javascript:void(0)"><i
+                                                class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="javascript:void(0)"><i
+                                                class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="javascript:void(0)"><i
+                                                class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End User Profile-->
+                        </li>
+                       
+                        <!-- User Profile-->
+                        <div class="p-15 m-t-10">
+                            <h6>Panel administrador</h6>
+                        </div>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="/Panelestadisticas" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
+                                class="hide-menu">Estadistica</span></a></li>
+                                
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="/PanelprofileAdm" aria-expanded="false"><i
+                                class="mdi mdi-face"></i><span class="hide-menu">Profile</span></a></li>
+                  
+                  
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="/PaneladministradorAdm" aria-expanded="false"><i class="mdi mdi-border-all"></i><span
+                                class="hide-menu"> Registrar Administrador</span></a></li>
+
+                                <div class="p-15 m-t-10">
+                                    <h6>Panel Usuarios</h6>
+                                </div>
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="/Panelemprendedor" aria-expanded="false"><i class="mdi mdi-border-all"></i><span
+                                        class="hide-menu"> Registrar Usuario</span></a></li>
+                  
+                               
+                          
+                  
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="/AnunciosADM" aria-expanded="false"><i class="mdi mdi-lightbulb"></i><span
+                                class="hide-menu">Ofertas/Anuncios</span></a></li>
+
+                                
+                    <div class="p-15 m-t-10">
+                        <h6>Localizacion</h6>
+                    </div>
+                               
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="/Panelprovincia" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span
+                                class="hide-menu">Provincia</span></a>
+                            
+                                
+                            </li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/Panelcanton" aria-expanded="false"><i class="mdi mdi-map-marker-multiple"></i><span
+                                    class="hide-menu">Canton</span></a>
+                                
+                                    
+                                </li>
+
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="/Panelparroquia" aria-expanded="false"><i class="mdi mdi-map-marker-radius"></i><span
+                                        class="hide-menu">Parroquia</span></a>
+                                    
+                                        
+                                    </li>
+
+                                    <div class="p-15 m-t-10">
+                                        <h6>Lugares Turiosticos/Servicios</h6>
+                                    </div>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/Panellugarturistico1" aria-expanded="false"><i class="mdi mdi-pine-tree"></i><span
+                                    class="hide-menu"> Registrar lugar / Servicio turistico</span></a></li>
+
+                            
+
+
+
+                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="/tipoRegistro" aria-expanded="false"><i class="mdi mdi-pine-tree"></i><span
+                                        class="hide-menu">Tipo registro</span></a>
+                                    
+                                        
+                                    </li>
+                    
+
+
+
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="/PanelservicioAdm" aria-expanded="false"><i class="mdi mdi-pine-tree-box"></i><span
+                                            class="hide-menu">Atractivos / Servicios Turisticos</span></a>
+                                        
+                                            
+                                        </li>
+
+
+
+
+                                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="/Panelservicio2Adm" aria-expanded="false"><i class="mdi mdi-motorbike"></i><span
+                                                class="hide-menu">Actividades turisticas</span></a>
+                                            
+                                                
+                                            </li>  
+                        
+                                    
+                      
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <h4 class="page-title">Registrar Usuario</h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive m-t-20">
+                                    
+                                        <table class="table v-middle table-bordered" style="height: 450px">                                      
+                                    <thead>
+                                      <tr>
+                                       
+                                        <td>indice</td>
+                                        <td>id </td>
+                                        <td>Nombre </td>
+                                        <td>Contrasena</td>
+                                        <td>Telefono  </td>
+                                        <td>Correo </td>
+                                        
+                                        <td>Editar</td>
+                                      
+                                        
+                                        
+                                        
+                                       
+                                      </tr>
+                                    </thead>
+                                
+                                    <tbody>
+                                      <% if (data1) { %>
+                                        <% for(var i = 0; i < data1.length; i++) { %>
+                                        
+                                          <tr>
+                                            <td><%= (i + 1) %></td>
+                                            <td><%= data1[i].id_emprendedor %></td>
+                                            <td><%= data1[i].name_emprendedor%></td>
+                                            <td><%= data1[i].password%></td>
+                                            <td><%= data1[i].telf_emprendedor%></td>
+                                            <td><%= data1[i].correo%></td>
+                                         
+                                            <td>
+                                            <a href="/updateemprendedor/<%=data1[i].id_emprendedor%>"  class="btn btn-info">Editar</a>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter<%=data1[i].id_emprendedor%>">
+                                                Delete
+                                            </button>
+                                            <a>
+                                                
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModalCenter<%=data1[i].id_emprendedor%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Borrar Registro</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Esta seguro que desea borrar este registro del Usuario <h5><%=data1[i].name_emprendedor %><h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                              <a type="button" class="btn btn-primary" href="/deleteemprendedor/<%=data1[i].id_emprendedor%>">Delete</a>
+                                            
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                            </a>  
+                                              
+
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                      <% } %>
+                                      <style>
+                                        table  { margin-top:  20px; display: inline-block; overflow: auto; }
+    th div { margin-top: -20px; position: absolute; }
+    
+    /* design */
+    table { border-collapse: collapse; }
+    tr:nth-child(even) { background: rgb(255, 255, 255); }
+                                    </style>
+                                
+                                      
+                                          <div class="container">
+                                            <div class="row mt-5">
+                                              <div class="cold-md">
+                                           </div>
+                                           <div class="cold-md-5">
+                                             <div class="card">
+                                               <div class="card-body">     
+                                          <form action="/addemprendedor" method="post">
+                                            <div class="form-group">
+                                                
+                                            
+                                            <p>Nombre emprendedor <input type="text" name="name_emprendedor"  required class="form-control" size="40"></p>
+                                            <div class="form-group">
+                                               <p>Contrasena : <input type="password" required name="password"  class="form-control" ></p>
+                                              <div class="form-group">
+
+                                               
+                                                <p>Telefono : 
+                                                    <spam>Agrege prefijo del pais (+593 *********)</spam><input type="text" required name="telf_emprendedor"  onkeypress='return validaNumericos(event)' maxlength="13"  class="form-control" ></p>
+                                                <div class="form-group">
+
+                                              
+                                                    
+                                                    <script>
+                                                      
+                                                    
+                                                        
+                                                        function validaNumericos(event) {
+                                                        if(event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43){
+                                                          return true;
+                                                         }
+                                                         return false;        
+                                                    }
+                                                     </script>
+
+
+
+                                                  <p>Correo : <input type="email" required name="correo"  id="correoadminreg" class="form-control" ></p>
+                                                  <div class="form-group">
+
+                                                    <p>
+                                                        <input type="submit" class="btn btn-primary" value="Enviar" name="envregadmn" id="envregadm">
+                                                        <input type="reset" class="btn btn-primary" value="Borrar">
+                                                      </p>
+                                                    <div id="notificacionRep1adminreg" class="w-full text-center">
+
+                                                        <tbody id="notificacionRep1adminreg"></tbody>
+                                            
+                                            
+                                                    </div>
+                                                    <script
+                                                    src="https://code.jquery.com/jquery-3.6.0.js"
+                                                    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+                                                    crossorigin="anonymous"></script>   
+                                                    <script src="ajax.js"></script>
+                                             
+                                          
+                                          </form>
+                                          </div>
+                                          </div>
+                                           </div>
+                                          </div>
+                                        </tbody>
+                                   
+                                
+                                
+                                
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                national License. This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Inter<a
+                    href="#">UPS</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.js"></script>
+</body>
+
+</html>
